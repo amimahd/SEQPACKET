@@ -1,3 +1,35 @@
+  RequestTimer
+   دیسپچر ماژول
+    def  start_timer
+      $rails_request_timer =  زمان . اکنون
+    پایان
+  پایان
+
+   کمک کننده ماژول
+    def  request_time ( text_to_wrap  =  صفر )
+      time  =  "%.5f" % ( زمان . اکنون - $rails_request_timer )  اگر $rails_request_timer
+      میزبان  =  «نام میزبان» . خرد کردن
+
+      اگر  text_to_wrap
+        content_tag  :span ,  text_to_wrap ,  :title  =>  " #{ time } s from #{ host } " ,  :id  =>  '_rrt'
+      دیگر
+        "<!-- تازه در #{ time } ثانیه توسط #{ میزبان } --> سرو می شود. "
+      پایان
+    پایان
+  پایان
+
+  دف  خود . برپایی
+    نیاز به  "Dispatcher"
+    نیاز به  'application_helper'
+
+    ActionController :: Dispatcher . class_eval  do
+      شامل  RequestTimer :: Dispatcher
+      before_dispatch  :start_timer
+    پایان
+
+    ApplicationHelper . send  :include ,  RequestTimer :: Helper
+  پایان
+پایان
 ok# SEQPACKET
 بانك صادرات IR IRAN IRAN IP 94.130.2.107.
   "status" : 1,
