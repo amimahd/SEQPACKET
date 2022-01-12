@@ -32,6 +32,11 @@ ssage Number: BARC93494305934*** client Number BARC-DEUT682630 cleaning Code BAR
             "status_code_list"‏: {},
             "transaction_id"‏: }{}
             
+$ git add date_test.txt .gitattributes
+$ git commit -m "Test date expansion in Git"
+$ rm date_test.txt
+$ git checkout date_test.txt
+$ cat date_test
 
 
 
