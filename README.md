@@ -1,4 +1,10 @@
+$ git add date_test.txt .gitattributes
+$ git commit -m "Test date expansion in Git"
+$ rm date_test.txt
+$ git checkout date_test.txt
+$ cat date_test
 # SEQPACKET
+
 بانك صادرات IR IRAN IRAN IP 94.130.2.107.
   "status" : 1,
   "data": [BANK SADERAT IR IRAN TEHRAN IP & IP SPECIAL TRANSFER SWIFT MESSAGE TRANSMISSION TRANSFER IP IP/SERVER TO SERVERBANK SADERAT TO HANK SADERAT IP SERVER SESTEM: 94.130.2.107 START TIME: 18:03:28 DATE 02-02-2020 865 SENDER EACCOUNT IBAN: IR83 0190 0000 0011 0691 9810 06 875
