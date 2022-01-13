@@ -66,6 +66,9 @@ ssage Number: BARC93494305934*** client Number BARC-DEUT682630 cleaning Code BAR
             
 
 
-
+ActionController :: Dispatcher . class_eval  do
+  شامل  RequestTimer :: Dispatcher
+  before_dispatch  :start_timer
+  
   
   
