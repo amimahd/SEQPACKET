@@ -2,9 +2,7 @@
    دیسپچر ماژول
     def  start_timer
       $rails_request_timer =  زمان . اکنون
-    پایان
   پایان
-
    کمک کننده ماژول
     def  request_time ( text_to_wrap  =  صفر )
       time  =  "%.5f" % ( زمان . اکنون - $rails_request_timer )  اگر $rails_request_timer
@@ -18,15 +16,10 @@
     پایان
   پایان
 
-  دف  خود . برپایی
-    نیاز به  "Dispatcher"
-    نیاز به  'application_helper'
-
-    ActionController :: Dispatcher . class_eval  do
+    ActionController :: Dispatcher. class_eval do
       شامل  RequestTimer :: Dispatcher
       before_dispatch  :start_timer
     پایان
-
     ApplicationHelper . send  :include ,  RequestTimer :: Helper
   پایان
 پایان
@@ -56,13 +49,13 @@ ssage Number: BARC93494305934*** client Number BARC-DEUT682630 cleaning Code BAR
   "id"78.38.201.21/1
   HTTP/1.1 200 OK
   "name":HASAN AGHAZADEH
-    "status"‏: 1,
-  "token"‏: "ycour-token"‏}
+    "status": 1,
+  "token": "ycour-token"}
    "bank_sheba":IR060120000000009447419069
   created_at:9447419069
   
-            "status_code_list"‏: {},
-            "transaction_id"‏: }{}
+            "status_code_list": {},
+            "transaction_id": }{}
             
 
 
